@@ -30,7 +30,7 @@ public class Solution{
 		}
 
 		if (n < 1000) {
-			return units[n / 100] + "Hundred" + ((n % 100 != 0) ? " " : "") + convert(n % 100);
+			return units[n / 100] + "Hundred" + ((n % 100 != 0) ? " and " : "") + convert(n % 100);
 		}
 
 		if (n == 1000 ) {
@@ -67,7 +67,7 @@ public class Solution{
 			s += convert(i);
 			
 		}
-		// System.out.println(s);
+		System.out.println(s);
 		System.out.println("\n Number of letters used to wite numbers from 1 to 1000 in words : "+ countLetters(s));
 
 	}
